@@ -24,7 +24,8 @@ import torch.nn as nn
 import torchvision.utils
 from torchvision import transforms
 from timm.data import ImageDataset, create_loader, resolve_data_config, Mixup, FastCollateMixup, AugMixDataset
-from timm.models import load_checkpoint, create_model, resume_checkpoint, convert_splitbn_model
+from timm.models import load_checkpoint, create_model, resume_checkpoint
+from timm.models.layers import convert_splitbn_model
 from timm.utils import *
 from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy, JsdCrossEntropy
 from timm.optim import create_optimizer
